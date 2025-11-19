@@ -7,8 +7,8 @@ import (
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 
-	"github.com/kevino117/go-youtask/internal/config"
-	"github.com/kevino117/go-youtask/internal/handler"
+	"github.com/kevino117/go-youtask/pkg/config"
+	"github.com/kevino117/go-youtask/pkg/handler"
 )
 
 func main() {

@@ -7,8 +7,8 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/kevino117/go-youtask/internal/config"
-	"github.com/kevino117/go-youtask/internal/model"
+	"github.com/kevino117/go-youtask/pkg/config"
+	"github.com/kevino117/go-youtask/pkg/model"
 )
 
 const systemPrompt = `You are an AI agent specialized in personal task management.

@@ -4,9 +4,9 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/kevino117/go-youtask/internal/config"
-	"github.com/kevino117/go-youtask/internal/model"
-	"github.com/kevino117/go-youtask/internal/service"
+	"github.com/kevino117/go-youtask/pkg/config"
+	"github.com/kevino117/go-youtask/pkg/model"
+	"github.com/kevino117/go-youtask/pkg/service"
 )
 
 func PostTaskHandler(c *gin.Context) {

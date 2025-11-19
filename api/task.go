@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/kevino117/go-youtask/internal/config"
-	"github.com/kevino117/go-youtask/internal/model"
-	"github.com/kevino117/go-youtask/internal/service"
+	"github.com/kevino117/go-youtask/pkg/config"
+	"github.com/kevino117/go-youtask/pkg/model"
+	"github.com/kevino117/go-youtask/pkg/service"
 )
 
 // Handler es el entrypoint que Vercel invoca
