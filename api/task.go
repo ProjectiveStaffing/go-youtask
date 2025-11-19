@@ -11,9 +11,25 @@ import (
 
 // Handler es el entrypoint que Vercel invoca
 func Handler(w http.ResponseWriter, r *http.Request) {
-	// Configurar CORS
-	w.Header().Set("Access-Control-Allow-Origin", "https://ai-assistant-one-liard.vercel.app")
-	w.Header().Set("Access-Control-Allow-Origin", "https://ai-assistant-7kjd2dvzd-projective-staffings-projects.vercel.app")
+	// Lista de orígenes permitidos
+	allowedOrigins := []string{
+		"http://localhost:3000",
+		"https://ai-assistant-one-liard.vercel.app",
+		"https://ai-assistant-7kjd2dvzd-projective-staffings-projects.vercel.app",
+	}
+
+	// Obtener el origen de la petición
+	origin := r.Header.Get("Origin")
+
+	// Verificar si el origen está permitido
+	for _, allowedOrigin := range allowedOrigins {
+		if origin == allowedOrigin {
+			w.Header().Set("Access-Control-Allow-Origin", origin)
+			break
+		}
+	}
+
+	// Configurar otros headers CORS
 	w.Header().Set("Access-Control-Allow-Methods", "POST, OPTIONS")
 	w.Header().Set("Access-Control-Allow-Headers", "Origin, Content-Type, Authorization")
 
