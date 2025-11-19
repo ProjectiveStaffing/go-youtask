@@ -1,16 +1,7 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "api/task.go",
-      "use": "@vercel/go"
+  "functions": {
+    "api/task.go": {
+      "runtime": "go@latest"
     }
-  ],
-  "routes": [
-    {
-      "src": "/api/task",
-      "dest": "/api/task.go",
-      "methods": ["POST", "OPTIONS"]
-    }
-  ]
+  }
 }
