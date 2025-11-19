@@ -5,7 +5,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
-	"log"
 	"net/http"
 
 	"github.com/kevino117/go-youtask/internal/config"
@@ -109,8 +108,6 @@ func GenerateTaskFromAzure(prompt string, cfg config.AzureConfig) (model.TaskRes
 	}
 
 	content := azureResp.Choices[0].Message.Content
-
-	log.Printf("🔍 Azure OpenAI raw response: %s\n", content)
 
 	var parsed model.ResponseData
 	if err := json.Unmarshal([]byte(content), &parsed); err != nil {

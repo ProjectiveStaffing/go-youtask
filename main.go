@@ -32,8 +32,7 @@ func main() {
 
 	r.POST("/youtask/api/v0/task", handler.PostTaskHandler)
 
-	log.Printf("🚀 Servidor escuchando en http://localhost:%s", cfg.Port)
 	if err := r.Run(":" + cfg.Port); err != nil {
-		log.Fatalf("Error al iniciar el servidor: %v", err)
+		log.Fatal(err)
 	}
 }

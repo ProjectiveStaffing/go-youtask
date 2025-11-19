@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/task.go",
+      "use": "@vercel/go"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/task",
+      "dest": "/api/task.go",
+      "methods": ["POST", "OPTIONS"]
+    }
+  ],
+  "env": {
+    "AZURE_OPENAI_ENDPOINT": "@azure_openai_endpoint",
+    "AZURE_OPENAI_API_KEY": "@azure_openai_api_key",
+    "AZURE_OPENAI_DEPLOYMENT_NAME": "@azure_openai_deployment_name",
+    "AZURE_OPENAI_API_VERSION": "@azure_openai_api_version"
+  }
+}

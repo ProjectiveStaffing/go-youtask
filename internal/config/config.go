@@ -27,7 +27,7 @@ func LoadConfig() AzureConfig {
 	}
 
 	if cfg.Endpoint == "" || cfg.ApiKey == "" || cfg.DeploymentName == "" || cfg.ApiVersion == "" {
-		log.Fatal("❌ Missing enviroment variables for Azure OpenAI.")
+		log.Fatal("Missing required environment variables for Azure OpenAI")
 	}
 
 	if cfg.Port == "" {
