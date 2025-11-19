@@ -14,4 +14,6 @@ type ResponseData struct {
 	TaskCategory   []string `json:"taskCategory"`
 	DateToPerform  string   `json:"dateToPerform"`
 	ModelResponse  string   `json:"modelResponse"`
+	ItemType       []string `json:"itemType"`
+	AssignedTo     string   `json:"assignedTo"`
 }
