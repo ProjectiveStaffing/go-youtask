@@ -16,7 +16,7 @@ type AzureConfig struct {
 }
 
 func LoadConfig() AzureConfig {
-	_ = godotenv.Load()
+	_ = godotenv.Load() // Ignora el error si .env no existe (útil en producción)
 
 	cfg := AzureConfig{
 		Endpoint:       os.Getenv("AZURE_OPENAI_ENDPOINT"),
