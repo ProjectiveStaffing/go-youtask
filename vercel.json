@@ -5,5 +5,11 @@
       "src": "api/task.go",
       "use": "@vercel/go"
     }
+  ],
+  "routes": [
+    {
+      "src": "/api/task",
+      "dest": "/api/task.go"
+    }
   ]
 }
