@@ -16,6 +16,7 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 		"http://localhost:3000",
 		"https://ai-assistant-one-liard.vercel.app",
 		"https://ai-assistant-7kjd2dvzd-projective-staffings-projects.vercel.app",
+		"https://ai-assistant-h2focl5c9-projective-staffings-projects.vercel.app",
 	}
 
 	// Obtener el origen de la petición

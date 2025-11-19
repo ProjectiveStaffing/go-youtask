@@ -20,6 +20,7 @@ func main() {
 			"http://localhost:3000",
 			"https://ai-assistant-7kjd2dvzd-projective-staffings-projects.vercel.app",
 			"https://ai-assistant-6yceqcyen-projective-staffings-projects.vercel.app",
+			"https://ai-assistant-h2focl5c9-projective-staffings-projects.vercel.app",
 			"https://ai-assistant-one-liard.vercel.app",
 		},
 		AllowMethods:     []string{"GET", "POST", "OPTIONS"},
