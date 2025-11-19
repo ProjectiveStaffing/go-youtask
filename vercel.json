@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/task.go",
+      "use": "@vercel/go"
+    }
+  ]
+}
